@@ -24,7 +24,7 @@ cabal-version:       >=1.10
 source-repository this
   type:         git
   location:     http://github.com/erisco/control-dotdotdot.git
-  tag:          0.1.0.0
+  tag:          v0.1.0.0
 
   
 library
