@@ -1,4 +1,4 @@
--- | Haskell operator @g ... f = \x1 .. xn -> g (f x1 .. xn)@. Compose
+-- | Haskell operator @g ... f = \\x1 .. xn -> g (f x1 .. xn)@. Compose
 -- functions such that all arguments are applied. Obviates @(.).(.)@ and
 -- similar patterns in some cases.
 --
