@@ -49,14 +49,14 @@ class b ~ IsFun f => DotDotDot f (b :: Bool) where
 --
 
 instance DotDotDot b (IsFun b) => DotDotDot (a -> b) 'True where
-  type Return (_ -> b) 'True = Return b (IsFun b)
+  type Return (a -> b) 'True = Return b (IsFun b)
   type Replace (a -> b) r 'True = a -> Replace b r (IsFun b)
   (...) g f x = g ... f x
 --
 
 instance 'False ~ IsFun a => DotDotDot a 'False where
   type Return a 'False = a
-  type Replace _ r 'False = r
+  type Replace a r 'False = r
   (...) f x = f x
 --
 
